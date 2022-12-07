@@ -30,4 +30,9 @@ Description-YouTube link-https://www.youtube.com/watch?v=bmU30caj1Rw&ab_channel=
 
 Demo-Youtube link-https://www.youtube.com/watch?v=8FTIvrCLHJs&ab_channel=VINAYAKKITTAD
 
+<img src="/Slide4.GIF">
+<img src="/Slide5.GIF">
+<img src="/Slide6.GIF">
+<img src="/Slide7.GIF">
+
 
