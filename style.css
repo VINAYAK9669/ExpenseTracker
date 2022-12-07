@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Nunito:wght@200&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Nunito:wght@200&family=Rubik+Distressed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* TODO: BELOW CODE WILL BE FOR "INDEX.HTML*/
+.index_container {
+  line-height: 28px;
+  max-width: 80%;
+  margin: 10px auto auto;
+  text-align: justify;
+  border: 3px solid black;
+  padding: 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(218, 198, 150, 0.5);
+  font-weight: 500;
+  transition: 0.5s;
+}
+.index_container:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.01);
+  padding: 20px;
+  border-radius: 25px;
+}
+.index_container.hideindexContent {
+  display: none;
+}
+#index_header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.navbar ul li {
+  list-style: none;
+  display: flex;
+  transition: 0.3s;
+  font-size: calc(8px + (20 - 18) * (100vw - 500px) / (800 - 400));
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+.navbar ul li:hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.navbar ul li a:hover {
+  z-index: 3;
+  transform: scale(0.9);
+  cursor: pointer;
+  text-decoration: underline;
+  color: green;
+}
+.navbar ul li i {
+  margin: 2px;
+  text-decoration: none;
+}
+
+.index_navbar {
+  height: 75px;
+  width: 80%;
+  margin: 50px auto auto auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+  font-size: calc(12px + (20 - 18) * (100vw - 500px) / (800 - 400));
+  background-color: rgba(218, 198, 150, 0.5);
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+.index_container h1 {
+  color: #213402;
+  font-weight: 900;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+.index_navbar #logo {
+  font-family: "Rubik Distressed", cursive;
+  position: sticky;
+  z-index: 3;
+  font-size: calc(15px + (20 - 18) * (100vw - 500px) / (800 - 400));
+  color: #213402;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: transform 0.3s ease-in-out 0s;
+}
+.index_navbar #logo:hover {
+  cursor: default;
+  z-index: 3;
+  transform: scale(1.1) rotate(-10deg);
+  transition: all 0.3s ease-in-out 0s;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+.indexPage.blur,
+.aboutPage.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  height: 100vh;
+  max-width: 70%;
+  margin-left: 14%;
+}
+
+/*TODO: Below styling is for sign up form*/
+.suform-container h1,
+.loginform-container h1 {
+  position: relative;
+}
+
+.suform-container h1:after,
+.loginform-container h1:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(125, 234, 195, 0.8);
+  height: 3px;
+  width: 10%;
+  left: 0;
+  bottom: -10px;
+}
+
+.suform-container {
+  display: block;
+  width: 45%; /* Full width */
+  margin: 5% auto auto 26.7%;
+  background-color: rgba(254, 254, 254, 0.5);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+  padding: calc(12.33% 33.33% auto 33.33%);
+  font-weight: 500;
+  position: fixed; /* Stay in place */
+  top: 20%;
+  overflow: auto;
+  align-self: center;
+}
+.loginform-container {
+  display: block;
+  width: 45%; /* Full width */
+  margin: auto auto auto 26.7%;
+  background-color: rgba(254, 254, 254, 0.5);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+  padding: calc(12.33% 33.33% auto 33.33%);
+  font-weight: 500;
+  position: fixed; /* Stay in place */
+  top: 30%;
+  overflow: auto;
+  align-self: center;
+}
+.content {
+  display: block;
+  width: 30%; /* Full width */
+  margin: 11% 40% auto 38.7%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+  padding: 12px;
+  font-weight: 500;
+  position: fixed; /* Stay in place */
+  top: 20%;
+  overflow: auto;
+  align-self: center;
+}
+.suform-container label,
+.suform-container input,
+.loginform-container label,
+.loginform-container input {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: calc(12px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  margin: 5px auto 5px auto;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  font-size: calc(12px + (20 - 18) * (100vw - 500px) / (800 - 400));
+}
+.form input {
+  color: black;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  line-height: calc(30px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  margin: 5px auto 5px auto;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  font-size: calc(12px + (20 - 18) * (100vw - 500px) / (800 - 400));
+}
+.form span {
+  color: white;
+  font-size: calc(15px + (20 - 18) * (100vw - 500px) / (800 - 400));
+}
+.form button {
+  margin: 10px auto 0px auto;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  border: 2px solid black;
+  font-size: calc(12px + (20 - 18) * (100vw - 500px) / (800 - 400));
+}
+.content_table {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content_table thead {
+  color: white;
+  font-size: calc(12px + (20 - 18) * (100vw - 500px) / (800 - 400));
+  font-weight: 700;
+  background-color: rgba(218, 198, 150, 0.5);
+}
+.content_table .suform-container input:focus,
+.loginform-container input:focus,
+.content input:focus {
+  outline: none;
+}
+#expenseTable {
+  color: black;
+  font-size: calc(12px + (20 - 18) * (100vw - 500px) / (800 - 400));
+  margin: 10px;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: darkgreen;
+  opacity: 1;
+}
+#sigupForm,
+#loginForm,
+#expForm {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.suform-container .btn,
+.loginform-container .btn {
+  width: 100%;
+  display: inline-block;
+  border-radius: 8px;
+  background-color: rgba(24, 165, 170, 0.8);
+  align-self: center;
+  font-size: calc(8px + (20 - 16) * (100vw - 400px) / (800 - 400));
+}
+
+.suform-container .btn:active,
+.loginform-container .btn:active {
+  transform: scale(0.98);
+}
+.suform-container .form-field.onFocus input,
+.loginform-container .form-field.onFocus input {
+  color: white;
+  font-weight: 500;
+}
+.alertMessages {
+  display: none;
+}
+
+.hidden {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  transition: 0.3s;
+}
+.decrfontsize {
+  font-size: 5px;
+  background-color: white;
+}
+.animatezoom {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/*TODO: FOR DASHBOARD*/
+@media only screen and (max-width: 600px) {
+  .index_navbar {
+    height: 75px;
+    width: 80%;
+    margin: 20px auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    font-size: calc(5px + (20 - 18) * (100vw - 500px) / (800 - 400));
+    background-color: rgba(218, 198, 150, 0.5);
+    border-radius: 8px;
+    margin-bottom: 100px;
+  }
+  .index_container {
+    margin-top: -20%;
+    font-size: 8px;
+    line-height: 10px;
+    padding: 2px;
+  }
+  .content {
+    display: block;
+    width: 60%; /* Full width */
+    margin: 0% auto auto 16%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+    padding: 12px;
+    font-weight: 500;
+    position: fixed; /* Stay in place */
+    top: 30%;
+    overflow: auto;
+    align-self: center;
+  }
+
+  .suform-container {
+    display: block;
+    width: 60%; /* Full width */
+    margin: 5% 15% auto 19%;
+    background-color: rgba(254, 254, 254, 0.5);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+    padding: calc(12.33% 33.33% auto 33.33%);
+    font-weight: 500;
+    position: fixed; /* Stay in place */
+    top: 40%;
+    overflow: auto;
+    align-self: center;
+  }
+  .suform-container small {
+    display: none;
+    font-size: calc(8px + (20 - 18) * (100vw - 500px) / (800 - 400));
+  }
+  .loginform-container {
+    display: block;
+    width: 60%; /* Full width */
+    margin: 5% 15% auto 19%;
+    background-color: rgba(254, 254, 254, 0.5);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+    padding: calc(12.33% 33.33% auto 33.33%);
+    font-weight: 500;
+    position: fixed; /* Stay in place */
+    top: 40%;
+    overflow: auto;
+    align-self: center;
+  }
+  .navbar ul li {
+    margin: 10px 0px 10px 0px;
+  }
+  .hidden {
+    display: none; /* Hidden by default */
+  }
+  .content_table h1 {
+    font-size: calc(18px + (20 - 18) * (100vw - 500px) / (800 - 400));
+    margin-top: -30px;
+  }
+}
