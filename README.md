@@ -1,10 +1,7 @@
 
 # DAILY EXPENSE TRACKER
 
-This project is completely based on local stroage, hence one
-can easily create there daily expenses and track there expenses at any time.
-As all the expenses that user can enter will get store into the
-local stroage using unique username. 
+This project helps user to track there daily expenses. As this project is made in simple way, when user signup the username and password will save into the local storage and when user login using the same login credentials then user can able to access there own expense list that they have added previously. 
 
 
 ## Features
