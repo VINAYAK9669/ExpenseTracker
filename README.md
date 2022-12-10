@@ -1,7 +1,7 @@
 
 # DAILY EXPENSE TRACKER
 
-This project helps user to track there daily expenses. As this project is made in simple way, when user signup the username and password will save into the local storage and when user login using the same login credentials then user can able to access there own expense list that they have added previously. 
+This project helps user to track there daily expenses. As this project is made in simple way, when user signup the username and password will save into the local storage and when user login using the same login credentials then user can able to access there own expense list that they have added previously. The best feature of this is, using one device many users can track there own expense list (No limits for users on single device).
 
 
 ## Features
