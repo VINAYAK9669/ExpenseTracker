@@ -21,11 +21,13 @@ Javascript, HTML, CSS...
 
 ## Demo
 
-Check out the below links for Demo and description
+Check out the below links for Demo, Description and hoste link
 
 Description-YouTube link-https://www.youtube.com/watch?v=bmU30caj1Rw&ab_channel=VINAYAKKITTAD
 
 Demo-Youtube link-https://www.youtube.com/watch?v=8FTIvrCLHJs&ab_channel=VINAYAKKITTAD
+
+Host-Link: https://spontaneous-cajeta-6da33f.netlify.app/dashboard.html#
 
 <img src="/Slide4.GIF">
 <img src="/Slide5.GIF">
